@@ -27,21 +27,41 @@ For those who need to install conda, I have laid out the steps to installing con
 ## Now that we have conda set up, we need to create an environment for the workshop
 I'm simply transposing the instructions from Software Carpentry here, for convenience. Feel free to switch over to the that page at any time.
 
-### First download the YAML file containing environment details
+#### First download the YAML file containing environment details
 
 ```wget https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/files/conda_env.yaml```
 
-### Next create the environment detailed in our YAML
+#### Next create the environment detailed in our YAML
 
 ```conda env update --file conda_env.yaml```
 
-### This might take a minute, but when its done you can check if the environment was successfully created by activating it
+#### This might take a minute, but when its done you can check if the environment was successfully created by activating it
 ```conda activate snakemake_carpentry```
 
-If that worked, great! If not, ask for help as we'll need to get everyone to this point before proceeding. Once you've confirmed your environment is all set, you can deactivate it for now by running:
+#### If that worked, great! If not, ask for help as we'll need to get everyone to this point before proceeding. Once you've confirmed your environment is all set, you can deactivate it for now by running:
 
 ```conda deactivate```
 
 
-###
+## Final setup steps
+#### Setting up your text editor
+We'll be using a linux text editor to create and edit files on Amarel. The Carpentries tutorial mentions two, but on Amarel we only have access to ```nano``` so we'll use that one. It also gives instructions on how to encode configuration changes to the appearance of nano. You are welcome to make those changes to the nano configuration file (```~/.nanorc```) but I would suggest just loading nano with some options (see below) that will make it appear the same as the tutorial without changing the configuration of your nano environment.
+
+```nano -wiSOE -T 4 -Y python [FILE_YOU_WANT_TO_CREATE_OR_EDIT]```
+
+#### Downloading data for the tutorial
+The data for this tutorial is part of this repositor, but to make it easier I am hosting it on Dropbox. You can download it to your home directory and unpack via the following commands.
+
+```
+wget https://www.dropbox.com/scl/fi/n5prma461wvugxq6okjkh/data-for-snakemake-novice-bioinformatics.tar.xz
+tar -xvaf data-for-snakemake-novice-bioinformatics.tar.xz
+```
+
+You should now have a directory called ```snakemake_data``` in your home directory
+
+#### Starting an interactive session  
+We're about to start actually working with the data, and so we should move our operations off the login node and onto a compute node. We are going to request interactive resources from cmain using the following command.
+
+```srun -p cmain  --cpus-per-task 1 --mem-per-cpu 10g --time 02:00:00 --pty bash --constraint=OARC```
+
 
