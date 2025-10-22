@@ -7,8 +7,6 @@ Upon completion of the workshop students will have:
 1. Gained a familiarity with the use and benefits of workflow management systems generally and Snakemake specifically
 2. Completed a worked example using Snakemake to manage and perform basic bioinformatics analyses
 3. Learned about extensions and options in Snakemake that could apply to their coding/scripting
-   
-This workshop is suitable for STEM trainees who 1) have a familiarity working with Bash or other command line shell environments and 2) have an active Amarel account prior to the start of the workshop. No familiarity with python, R, or bioinformatics is needed to participate. In this workshop, we will collectively work through a Software Carpentry tutorial in which we will each build a Snakemake workflow to perform some basic bioinformatics analysis.
 
 Aside from the initial setup modifications listed below, we will be following this tutorial from [Software Carpentries](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/).
 
