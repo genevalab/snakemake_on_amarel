@@ -1,7 +1,7 @@
 # Snakemake on Amarel
 Workshop on using the Snakemake workflow system on Amarel
 
-Today we will be familiarizing ourselves with the basics of Snakemake, a workflow management system that enables reliable, scalable, and reproducible scientific workflows. We’ll work through a Software Carpentry tutorial to build a Snakemake workflow to perform a basic bioinformatics analysis.
+Today we will be familiarizing ourselves with the basics of Snakemake, a workflow management system that enables reliable, scalable, and reproducible scientific workflows. Use of workflow managers is becoming [increasingly common in Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010705). We’ll work through a Software Carpentry tutorial to build a Snakemake workflow to perform a basic bioinformatics analysis.
 
 Upon completion of the workshop students will have:
 1. Gained a familiarity with the use and benefits of workflow management systems generally and Snakemake specifically
