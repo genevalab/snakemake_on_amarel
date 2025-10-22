@@ -28,7 +28,7 @@ For those who need to install conda, I have laid out the steps to installing con
 I'm simply transposing the instructions from Software Carpentry here, for convenience. Feel free to switch over to the that page at any time.
 
 #### First establish some settings for conda
-We are going to edit the file ```~/.condarc``` in your home directory. If you just installed conda today this file will either not exist yet, or be empty. If you are an experienced conda user, you may already have settings establised in this file. If you have anything else currently in that file, comment it out by adding ```#``` to the start of each line. 
+We are going to edit the file ```~/.condarc``` in your home directory. If you just installed conda today this file will either not exist yet, or be empty. If you are an experienced conda user, you may already have settings established in this file. If you have anything else currently in that file, comment it out by adding ```#``` to the start of each line. 
 
 To edit ```~/.condarc``` type:
 
@@ -68,7 +68,7 @@ We'll be using a linux text editor to create and edit files on Amarel. The Carpe
 ```nano -wiSOE -T 4 -Y python [FILE_YOU_WANT_TO_CREATE_OR_EDIT]```
 
 #### Downloading data for the tutorial
-The data for this tutorial is part of this repositor, but to make it easier I am hosting it on Dropbox. You can download it to your home directory and unpack via the following commands.
+The data for this tutorial is part of this repository, but to make it easier I am hosting it on Dropbox. You can download it to your home directory and unpack via the following commands.
 
 ```
 wget https://www.dropbox.com/scl/fi/n5prma461wvugxq6okjkh/data-for-snakemake-novice-bioinformatics.tar.xz
@@ -78,7 +78,7 @@ tar -xvaf data-for-snakemake-novice-bioinformatics.tar.xz
 You should now have a directory called ```snakemake_data``` in your home directory
 
 #### Starting an interactive session  
-We're about to start actually working with the data, and so we should move our operations off the login node and onto a compute node. We are going to request interactive resources from cmain using the following command.
+We're about to start actually working with the data, and so we should move our operations off the login node and onto a compute node. We are going to request interactive resources from the ```cmain``` partition on Amarel using the following command.
 
 ```srun -p cmain  --cpus-per-task 1 --mem-per-cpu 10g --time 02:00:00 --pty bash --constraint=oarc```
 
