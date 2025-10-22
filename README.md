@@ -1,2 +1,19 @@
 # snakemake_on_amarel
-Workshop on using Snakemake on Amare
+Workshop on using Snakemake on Amarel
+
+Wednesday, Oct 22 & Oct 29 12–2 PM
+
+This hands-on workshop will introduce Snakemake, a workflow management system that enables reliable, scalable, and reproducible scientific workflows. We’ll work through a Software Carpentry tutorial to build a Snakemake workflow to perform a basic bioinformatics analysis. Later episodes will focus on workflow design, debugging, and configuration.
+
+Upon completion of the workshop students will have:
+1. Gained a familiarity with the use and benefits of workflow management systems generally and Snakemake specifically
+2. Completed a worked example using Snakemake to manage and perform basic bioinformatics analyses
+3. Learned about extensions and options in Snakemake that could apply to their coding/scripting
+   
+This workshop is suitable for STEM trainees who 1) have a familiarity working with Bash or other command line shell environments and 2) have an active Amarel account prior to the start of the workshop. No familiarity with python, R, or bioinformatics is needed to participate. In this workshop, we will collectively work through a Software Carpentry tutorial in which we will each build a Snakemake workflow to perform some basic bioinformatics analysis.
+
+Details from the tutorial:
+"Snakemake enables the writing of reliable, scalable and reproducible scientific workflows as a series of chained rules. Simple workflows to replace shell scripts can be written in a few lines of code, while for more complex cases there is support for conda integration, software containers, cluster execution, cloud execution, etc. You can also add Python and R code directly into your workflow.
+This lesson introduces the core concepts of Snakemake in the context of a typical analysis task, aligning short cDNA reads to a reference transcriptome. Later episodes focus on practical questions of workflow design, debugging and configuration."
+
+Aside from the initial setup modifications listed below, we will be following this tutorial from [Software Carpentries](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/).
