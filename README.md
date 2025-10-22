@@ -22,6 +22,16 @@ Aside from the initial setup modifications listed below, we will be following th
 # Getting started
 The tutorial was written assuming a linux workstation, therefore we have to make a few modifications in order to get started. This replaces the "Summary and Setup" instructions on the Carpentries tutorial. 
 
-## First we need to connect to amarel
+## First we need to connect to amarel and set up conda
 Since everyone who signed up for this workshop already has an amarel account we only need to get connected via ssh. If you use a mac open terminal if on a PC use whichever tool you typically use to start an ssh session (putty, openssh, etc). Now connect using the command/address below, replacing [YOUR_NETID] with your actual netID.
+
 ```ssh [YOUR_NETID]@amarelc@hpc.rutgers.edu```
+
+Once logged in, confirm you have an active conda install in your home directory by typing ```which conda``` if that command returns a path to a conda binary like ```/projects/community/anaconda/2023.10/bd387/base/bin/conda```, then you have conda installed. If you don't you will need to set up conda before proceeding.
+
+I have laid out the steps to installing conda in your home directory [here](https://github.com/lizardroom/conda_on_amarel). Go to that page, follow all the steps and return to this page to continue.
+
+## Now that we have conda set up, we need to create an environment for the workshop
+I'm simply transposing the instructions from Software Carpentry here, for convenience. Feel free to switch over to the that page at any time.
+
+
