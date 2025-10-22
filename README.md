@@ -62,6 +62,11 @@ You should now have a directory called ```snakemake_data``` in your home directo
 #### Starting an interactive session  
 We're about to start actually working with the data, and so we should move our operations off the login node and onto a compute node. We are going to request interactive resources from cmain using the following command.
 
-```srun -p cmain  --cpus-per-task 1 --mem-per-cpu 10g --time 02:00:00 --pty bash --constraint=OARC```
+```srun -p cmain  --cpus-per-task 1 --mem-per-cpu 10g --time 02:00:00 --pty bash --constraint=oarc```
 
+It might take a few seconds to a minute for you to be allocated resources.
 
+#### Activate your environment inside your interactive session
+The final preparation step is to activate our snakemake environment again, this time inside the interactive session we just created.
+
+```conda activate snakemake_carpentry```
