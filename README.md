@@ -27,7 +27,25 @@ For those who need to install conda, I have laid out the steps to installing con
 ## Now that we have conda set up, we need to create an environment for the workshop
 I'm simply transposing the instructions from Software Carpentry here, for convenience. Feel free to switch over to the that page at any time.
 
-#### First download the YAML file containing environment details
+#### First establish some settings for conda
+We are going to edit the file ```~/.condarc``` in your home directory. If you just installed conda today this file will either not exist yet, or be empty. If you are an experienced conda user, you may already have settings establised in this file. If you have anything else currently in that file, comment it out by adding ```#``` to the start of each line. 
+
+To edit ```~/.condarc``` type:
+
+``` nano ~/.condarc```
+
+Now add this text to your ```~/.condarc``` file:
+
+```
+channels:
+  - conda-forge
+  - bioconda
+solver: libmamba
+channel_priority: strict
+```
+Exit conda by hitting ```Ctrl + X``` and save by typing ```Y``` and hitting ```Enter```.
+
+#### Now we can download the YAML file containing environment details
 
 ```wget https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/files/conda_env.yaml```
 
