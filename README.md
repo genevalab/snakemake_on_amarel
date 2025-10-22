@@ -69,7 +69,7 @@ We'll be using a linux text editor to create and edit files on Amarel. The Carpe
 The data for this tutorial is part of this repository, but to make it easier I am hosting it on Dropbox. You can download it to your home directory and unpack it via the following commands.
 
 ```
-wget https://www.dropbox.com/scl/fi/n5prma461wvugxq6okjkh/data-for-snakemake-novice-bioinformatics.tar.xz
+wget https://raw.githubusercontent.com/genevalab/snakemake_on_amarel/refs/heads/main/data-for-snakemake-novice-bioinformatics.tar.xz
 tar -xvaf data-for-snakemake-novice-bioinformatics.tar.xz
 ```
 
