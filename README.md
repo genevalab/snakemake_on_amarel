@@ -17,3 +17,11 @@ Details from the tutorial:
 This lesson introduces the core concepts of Snakemake in the context of a typical analysis task, aligning short cDNA reads to a reference transcriptome. Later episodes focus on practical questions of workflow design, debugging and configuration."
 
 Aside from the initial setup modifications listed below, we will be following this tutorial from [Software Carpentries](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/).
+
+
+# Getting started
+The tutorial was written assuming a linux workstation, therefore we have to make a few modifications in order to get started. This replaces the "Summary and Setup" instructions on the Carpentries tutorial. 
+
+## First we need to connect to amarel
+Since everyone who signed up for this workshop already has an amarel account we only need to get connected via ssh. If you use a mac open terminal if on a PC use whichever tool you typically use to start an ssh session (putty, openssh, etc). Now connect using the command/address below, replacing [YOUR_NETID] with your actual netID.
+```ssh [YOUR_NETID]@amarelc@hpc.rutgers.edu```
