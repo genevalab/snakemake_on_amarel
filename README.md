@@ -61,12 +61,12 @@ Exit conda by hitting ```Ctrl + X``` and save by typing ```Y``` and hitting ```E
 
 ## Final setup steps
 #### Setting up your text editor
-We'll be using a linux text editor to create and edit files on Amarel. The Carpentries tutorial mentions two, but on Amarel we only have access to ```nano``` so we'll use that one. It also gives instructions on how to encode configuration changes to the appearance of nano. You are welcome to make those changes to the nano configuration file (```~/.nanorc```) but I would suggest just loading nano with some options (see below) that will make it appear the same as the tutorial without changing the configuration of your nano environment.
+We'll be using a linux text editor to create and edit files on Amarel. The Carpentries tutorial mentions two, but on Amarel we only have access to ```nano``` so we'll use that one. It also gives instructions on how to encode configuration changes to the appearance of nano. You are welcome to make those changes to the nano configuration file (```~/.nanorc```), but I would suggest just loading plain, vanilla nano. If you want to use the options from the Carpentries tutorial, you can use the options below, which will make your nano editor appear the same as the tutorial without changing the configuration of your nano environment.
 
 ```nano -wiSOE -T 4 -Y python [FILE_YOU_WANT_TO_CREATE_OR_EDIT]```
 
 #### Downloading data for the tutorial
-The data for this tutorial is part of this repository, but to make it easier I am hosting it on Dropbox. You can download it to your home directory and unpack via the following commands.
+The data for this tutorial is part of this repository, but to make it easier I am hosting it on Dropbox. You can download it to your home directory and unpack it via the following commands.
 
 ```
 wget https://www.dropbox.com/scl/fi/n5prma461wvugxq6okjkh/data-for-snakemake-novice-bioinformatics.tar.xz
