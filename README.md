@@ -88,3 +88,6 @@ It might take a few seconds to a minute for you to be allocated resources.
 The final preparation step is to activate our snakemake environment again, this time inside the interactive session we just created.
 
 ```conda activate snakemake_carpentry```
+
+## Ok, we are done with the Amarel specific changes
+Go to [Episode 1](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/01-introduction.html) of the Carpentries tutorial and being the exercises.
