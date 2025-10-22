@@ -11,7 +11,7 @@ Upon completion of the workshop students will have:
 Aside from the initial setup modifications listed below, we will be following this tutorial from [Software Carpentries](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/).
 
 # Getting started
-The Software Carpentry tutorial was written assuming a linux workstation, therefore we have to make a few modifications in order to get started using Snakemake on Amarel. The next few sections replace the "Summary and Setup" instructions on the Carpentries tutorial. 
+The Software Carpentry tutorial was written assuming a linux workstation, therefore we have to make a few modifications in order to get started using Snakemake on Amarel. The next few sections replace the ["Summary and Setup"](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/index.html) instructions on the Carpentries tutorial. 
 
 ## First we need to connect to amarel and set up conda
 Since everyone who signed up for this workshop already has an amarel account we only need to get connected via ssh. If you use a mac open terminal if on a PC use whichever tool you typically use to start an ssh session (putty, openssh, etc). Now connect using the command/address below, replacing [YOUR_NETID] with your actual netID. NOTE: we are using the ```amarelc``` login node today due to OARC maintenance. Trying to connect to other login nodes may fail.
