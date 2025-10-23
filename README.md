@@ -78,7 +78,7 @@ You should now have a directory called ```snakemake_data``` in your home directo
 #### Starting an interactive session  
 We're about to start actually working with the data, and so we should move our operations off the login node and onto a compute node. We are going to request interactive resources from the ```cmain``` partition on Amarel using the following command.
 
-```srun -p cmain --cpus-per-task 1 --mem-per-cpu 10g --time 02:00:00 --reservation=maintenance-202510 --account=ccib --constraint=oarc --pty bash```
+```srun -p cmain --cpus-per-task 1 --mem-per-cpu 10g --time 02:00:00 --constraint=oarc --pty bash```
 
 It might take a few seconds to a minute for you to be allocated resources.
 
