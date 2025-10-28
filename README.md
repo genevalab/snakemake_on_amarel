@@ -1,7 +1,7 @@
 # Snakemake on Amarel
 Workshop on using the Snakemake workflow system on Amarel
 
-Today we will be familiarizing ourselves with the basics of Snakemake, a workflow management system that enables reliable, scalable, and reproducible scientific workflows. Use of workflow managers is becoming [increasingly common in Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010705). We’ll work through a Software Carpentry tutorial to build a Snakemake workflow to perform a basic bioinformatics analysis.
+Today, we will be familiarizing ourselves with the basics of Snakemake, a workflow management system that enables reliable, scalable, and reproducible scientific workflows. Use of workflow managers is becoming [increasingly common in Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010705). We’ll work through a Software Carpentry tutorial to build a Snakemake workflow to perform a basic bioinformatics analysis.
 
 Upon completion of the workshop students will have:
 1. Gained a familiarity with the use and benefits of workflow management systems generally and Snakemake specifically
@@ -13,7 +13,7 @@ Aside from the initial setup modifications listed below, we will be following th
 # Getting started
 The Software Carpentry tutorial was written assuming a linux workstation, therefore we have to make a few modifications in order to get started using Snakemake on Amarel. The next few sections replace the ["Summary and Setup"](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/index.html) instructions on the Carpentries tutorial. 
 
-## First we need to connect to amarel and set up conda
+## First, we need to connect to Amarel and set up conda
 Since everyone who signed up for this workshop already has an amarel account we only need to get connected via ssh. If you use a mac open terminal if on a PC use whichever tool you typically use to start an ssh session (putty, openssh, etc). Now connect using the command/address below, replacing [YOUR_NETID] with your actual netID. NOTE: we are using the ```amarelc``` login node today due to OARC maintenance. Trying to connect to other login nodes may fail.
 
 ```ssh [YOUR_NETID]@amarelc.hpc.rutgers.edu```
@@ -25,7 +25,7 @@ For those who need to install conda, I have laid out the steps to installing con
 ## Now that we have conda set up, we need to create an environment for the workshop
 I'm simply transposing the instructions from Software Carpentry here, for convenience. Feel free to switch over to the that page at any time.
 
-#### First establish some settings for conda
+#### First, establish some settings for conda
 We are going to edit the file ```~/.condarc``` in your home directory. If you just installed conda today this file will either not exist yet, or be empty. If you are an experienced conda user, you may already have settings established in this file. If you have anything else currently in that file, comment it out by adding ```#``` to the start of each line. 
 
 To edit ```~/.condarc``` type:
@@ -61,7 +61,7 @@ Exit conda by hitting ```Ctrl + X``` and save by typing ```Y``` and hitting ```E
 
 ## Final setup steps
 #### Setting up your text editor
-We'll be using a linux text editor to create and edit files on Amarel. The Carpentries tutorial mentions two, but on Amarel we only have access to ```nano``` so we'll use that one. It also gives instructions on how to encode configuration changes to the appearance of nano. You are welcome to make those changes to the nano configuration file (```~/.nanorc```), but I would suggest just loading plain, vanilla nano. If you want to use the options from the Carpentries tutorial, you can use the options below, which will make your nano editor appear the same as the tutorial without changing the configuration of your nano environment.
+We'll be using a Linux text editor to create and edit files on Amarel. The Carpentries tutorial mentions two, but on Amarel we only have access to ```nano``` so we'll use that one. It also gives instructions on how to encode configuration changes to the appearance of nano. You are welcome to make those changes to the nano configuration file (```~/.nanorc```), but I would suggest just loading plain, vanilla nano. If you want to use the options from the Carpentries tutorial, you can use the options below, which will make your nano editor appear the same as the tutorial without changing the configuration of your nano environment.
 
 ```nano -wiSOE -T 4 -Y python [FILE_YOU_WANT_TO_CREATE_OR_EDIT]```
 
@@ -87,5 +87,5 @@ The final preparation step is to activate our snakemake environment again, this 
 
 ```conda activate snakemake_carpentry```
 
-## Ok, we are done with the Amarel specific changes
-Go to [Episode 1](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/01-introduction.html) of the Carpentries tutorial and being the exercises.
+## Ok, we are done with the Amarel-specific changes
+Go to [Episode 1](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/01-introduction.html) of the Carpentries tutorial and begin the exercises.
