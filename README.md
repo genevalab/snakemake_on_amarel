@@ -93,7 +93,7 @@ The final preparation step is to activate our snakemake environment again, this 
 # Notes for Day 2 (29 Oct 2025)
 Go to [Episode 1](https://carpentries-incubator.github.io/snakemake-novice-bioinformatics/01-introduction.html) of the Carpentries tutorial and begin the exercises.
 
-## Try to get through Episode 6, with a reachable goal of finishing Episode 8. 
+## Try to get through Episode 6 (with a reach goal of finishing Episode 8)
 
 ## In Episode 5, there are instructions to generate a DAG plot. 
 
