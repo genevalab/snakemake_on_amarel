@@ -97,5 +97,5 @@ Go to [Episode 1](https://carpentries-incubator.github.io/snakemake-novice-bioin
 
 ## In Episode 5, there are instructions to generate a DAG plot. 
 
-The direct plotting option will not work the way we are connected to Amarel (although it’s possible if you want to set this up). Just below that line are instructions to plot the DAG to a PNG file using dot. Run this option and copy that file to your local machine to view. The easiest way to do this is to use OnDemand to download the file, but there are lots of other ways to transfer files on and off Amarel if you prefer. 
+The direct plotting option will not work the way we are connected to Amarel (although it’s possible if you want to set this up). Just below that line are instructions to plot the DAG to a PNG file using dot. Run this option and copy that file to your local machine to view. The easiest way to do this is to use [OnDemand](http://ondemand.hpc.rutgers.edu)  to download the file, but there are lots of other ways to transfer files on and off Amarel if you prefer. 
 
