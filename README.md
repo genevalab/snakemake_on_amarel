@@ -16,7 +16,7 @@ The Software Carpentry tutorial was written assuming a linux workstation, theref
 ## First, we need to connect to Amarel and set up conda
 Since everyone who signed up for this workshop already has an amarel account we only need to get connected via ssh. If you use a mac open terminal if on a PC use whichever tool you typically use to start an ssh session (putty, openssh, etc). Now connect using the command/address below, replacing [YOUR_NETID] with your actual netID. NOTE: we are using the ```amarelc``` login node today due to OARC maintenance. Trying to connect to other login nodes may fail.
 
-```ssh [YOUR_NETID]@amarelc.hpc.rutgers.edu```
+```ssh [YOUR_NETID]@amarel.hpc.rutgers.edu```
 
 Once logged in, confirm you have an active conda install in your home directory by typing ```which conda```. Yours need not be an exact match to mine, but the output from that command should look something like```/projects/community/anaconda/2023.10/bd387/base/bin/conda```. If it does, then you have conda installed. If it doesn't, then you will need to set up conda before proceeding.
 
